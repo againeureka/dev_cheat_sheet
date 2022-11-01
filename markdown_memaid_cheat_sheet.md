@@ -1,7 +1,7 @@
 # Markdown Mermaid cheat sheet
 
-- [https://mermaid.live/edit](https://mermaid.live/edit)
-
+- 라이브 에디터 [https://mermaid.live/edit](https://mermaid.live/edit)
+- 갤러리 [mermaid-js](https://mermaid-js.github.io/mermaid/)
 
 ## Pie chart
 
@@ -37,8 +37,9 @@ cond(no)->op
 
 ## Flow chart 3
 
+- Example of sequence diagram
+
 ```mermaid
-%% Example of sequence diagram
   sequenceDiagram
     Alice->>Bob: Hello Bob, how are you?
     alt is sick
@@ -50,7 +51,9 @@ cond(no)->op
     Bob->>Alice: Thanks for asking
     end
 ```
+
 ## Flow chart 4
+
 ```mermaid
 graph LR
 A[Hard edge] -->B(Round edge)
@@ -148,6 +151,19 @@ stateDiagram
     Stop --> [*]
 ```
 
+## Journey
+
+```mermaid
+journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+```
 
 
 
